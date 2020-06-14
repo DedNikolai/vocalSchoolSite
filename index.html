@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Malitska Vocal School</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-slider.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
@@ -16,7 +17,13 @@
         <div class="logo">
             <a href="#"><img src="img/logo.png" alt="logo"></a>
         </div>
+        <div class="burger-toggler">
+            <div class="burger-toggler__item"></div>
+            <div class="burger-toggler__item"></div>
+            <div class="burger-toggler__item"></div>
+        </div>
         <nav class="navbar">
+            <span class="close"></span>
             <ul class="navigation">
                 <li class="navigation__item"><a href="#" class="navigation__link">Головна</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Про академію</a></li>
@@ -36,7 +43,7 @@
 </header>
 <main class="main">
     <section class="about-founder">
-        <img src="img/founder-photo.png" class="about-founder__photo" />
+        <div class="about-founder__img-container"><img src="img/founder-photo.png" class="about-founder__photo" /></div>
         <div class="about-founder__description">
             <h2 class="section-title">Про засновника</h2>
             <div class="section-text">
@@ -94,7 +101,7 @@
                 <li class="faculties-list__item">
                     <a href="#" class="faculties-list__link">
                         <div class="faculties-list__item-container">
-                            <img src="img/icons/vocal-icon.png"  alt="">
+                            <div><img src="img/icons/vocal-icon.png"  alt=""></div>
                             <div class="faculties-list__item-title">Вокал</div>
                         </div>
                     </a>
