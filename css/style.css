@@ -82,6 +82,7 @@ body {
 .header .header__slogan {
     margin-top: 20px;
     font-size: 32px;
+    line-height: 36px;
     color: #fff;
     font-weight: 600;
     text-align: center;
@@ -245,7 +246,7 @@ body {
 }
 
 .teachers {
-    padding-top: 30px;
+    padding: 30px 0 20px;
     background-color: #f2f2f2;
 }
 
@@ -648,7 +649,7 @@ body {
     }
 
     .chevron-down {
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     .about-founder .about-founder__description {
@@ -657,6 +658,12 @@ body {
 }
 
 @media (max-width: 767px) {
+
+    .logo .logo__link img{
+        width: 250px;
+        height: 100px;
+        object-fit: contain;
+    }
     .about-founder {
         flex-wrap: wrap;
     }
@@ -757,7 +764,6 @@ body {
 
     .faculties-list .faculties-list__item-container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 100%;
         padding: 0 20px;
@@ -765,7 +771,7 @@ body {
     }
 
     .faculties-list .faculties-list__item-title {
-        margin-top: 0;
+        margin: 0 0 0 20px;
         font-size: 18px;
         color: rgb(17, 14, 30);
         text-align: left;
