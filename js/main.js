@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.feedbacks-slider').slick({
-        // dots: true,
+        dots: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -27,12 +27,16 @@ $(document).ready(function(){
                 }
             }
         ]
-});
+    });
     $('.burger-toggler').click(() => {
         $('.navbar').show( 300 );
     })
 
     $('.close').click(() => {
+        $('.navbar').hide(300)
+    })
+
+    $('.navigation__link').click(() => {
         $('.navbar').hide(300)
     })
 });

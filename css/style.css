@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
@@ -39,7 +39,10 @@ body {
 }
 
 .navbar {
-    width: 60% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
 }
 
 .navigation {
@@ -54,22 +57,29 @@ body {
 }
 
 .navigation .navigation__link {
-    padding: 10px 0;
+    padding: 5px 0;
     color: #fff;
     font-size: 16px;
-    font-weight: bold;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .navigation .navigation__link:hover {
     border-bottom: 1px solid rgb(228, 213, 130);
 }
 
+.navigation a:active {
+    background-color: yellow;
+}
+
+.btn-container {
+    margin-left: 30px;
+}
+
 .header .header__title {
     margin-top: 150px;
     font-size: 42px;
     text-align: center;
-    font-weight: 600;
     color: rgb(228, 213, 130);
     line-height: 46px;
 }
@@ -84,12 +94,11 @@ body {
     font-size: 32px;
     line-height: 36px;
     color: #fff;
-    font-weight: 600;
     text-align: center;
 }
 
 .chevron-down {
-    margin-top: 250px;
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -101,6 +110,10 @@ body {
 .about-founder {
     display: flex;
     background-color: #f2f2f2;
+}
+
+.about-founder--background--none {
+    background-color: #ffffff;
 }
 
 .about-founder .about-founder__photo {
@@ -138,7 +151,6 @@ body {
 .section-title {
     font-size: 36px;
     color: rgb(186, 171, 112);
-    font-weight: 600;
     line-height: 38px;
 }
 
@@ -412,6 +424,10 @@ body {
     overflow: hidden;
 }
 
+.feedbacks--margin-bottom {
+    margin-bottom: 30px;
+}
+
 .feedbacks-slider {
     padding-top: 100px;
 }
@@ -597,7 +613,7 @@ body {
     left: 15px;
     content: ' ';
     height: 33px;
-    width: 2px;
+    width: 3px;
     background-color: rgb(186, 171, 112);
 }
 .close:before {
@@ -620,7 +636,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100% !important;
+        width: 100%;
         display: none;
     }
 
@@ -640,6 +656,7 @@ body {
         padding: 10px 20px;
         font-size: 18px;
         color: rgb(17, 14, 30);
+        border-bottom: 1px solid rgb(207, 207, 207);
     }
 
     .navigation .navigation__item:hover .navigation__link {
@@ -723,6 +740,21 @@ body {
 }
 
 @media (max-width: 575px) {
+    .navbar {
+        z-index: 999;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+    .navigation {
+        height: 100vh;
+        width: 90%;
+    }
+
+    .close {
+        right: 10%;
+        margin-right: 10px;
+    }
+
     .footer {
         flex-wrap: wrap;
     }

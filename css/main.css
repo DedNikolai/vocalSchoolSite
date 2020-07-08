@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.header-container {
+    background-color: rgb(35, 43, 62);
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+}
+
+.logo logo__link {
+    width: 100%;
+    height: 100%;
+}
+
+.logo .logo__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-menu--padding-none {
+    padding: 10px 20px;
+}
+
+.about {
+    padding: 60px 0;
+    background-color: #f2f2f2;
+}
+
+.container--background-grey {
+    background-color: #f2f2f2;
+}
+
+.about__description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-title--mini {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.about p {
+    line-height: 26px;
+}
+
+.our-teachers {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.teachers-list .teachers-list__item--half-width {
+    width: 50%;
+}
+
+.teachers-list--margin-none {
+    margin: 0;
+}
+
+.our-teachers__description {
+    padding: 40px 30px;
+}
+
+.feedbacks-slider--padding-none {
+    margin: 30px 0;
+    padding: 0;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.feedback-text--margin-none {
+    margin-top: 20px;
+}
+
+.about-teachers {
+    padding: 60px 0;
+}
+
+.our-teachers-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+}
+
+.our-teachers-list .our-teachers-list__item {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    margin: 50px 30px;
+    padding: 70px 30px 0;
+    box-shadow: 0px 3px 18px 0px rgba(17, 9, 9, 0.08);
+    box-sizing: border-box;
+}
+
+.teacher-photo {
+    position: absolute;
+    z-index: 9999;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.teacher-name {
+    margin: 30px 0 20px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(186, 171, 112);
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.teacher-row {
+    margin-top: 10px;
+}
+
+.teacher-row .teacher-row__type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.test-lesson {
+    display: flex;
+}
+
+.test-lesson .test-lesson__form {
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    background-color: rgb(35, 43, 62);
+}
+
+.test-lesson .test-lesson__description {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 50px 40px 30px;
+}
+
+.prices--background-grey {
+    background-color: #f2f2f2;
+}
+
+.prices-list, .discounts-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prices-list .prices-list__item {
+    height: 250px;
+    width: 320px;
+    background-color: #fff;
+    margin: 40px 30px;
+    padding: 20px 30px 0;
+    box-shadow: 0px 3px 18px 0px rgba(17, 9, 9, 0.08);
+    box-sizing: border-box;
+}
+
+.discupline-name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.abonement {
+    margin: 20px 0 30px;
+    font-size: 22px;
+}
+
+.price-value__row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 18px;
+}
+
+.price-rigth {
+    color: rgb(186, 171, 112);
+    font-weight: 600;
+}
+
+.discounts-list .discounts-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 250px;
+    background-color: #fff;
+    font-size: 22px;
+    margin: 40px 30px;
+    padding: 0 20px;
+    box-shadow: 0px 3px 18px 0px rgba(17, 9, 9, 0.08);
+    box-sizing: border-box;
+}
+
+.contacts-info {
+    background-color: #f2f2f2;
+}
+
+.contacts-information--background-grey {
+    background-color: #f2f2f2;
+    color: rgb(17, 14, 30);
+}
+
+.contacts--clippach-none {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.contacts .contacts__social-link > i {
+    color: rgb(35, 43, 62);;
+}
+
+.feedback-container--margin-bottom {
+    margin-bottom: 30px;
+}
+
+.blog {
+    margin-bottom: 30px;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.about-founder .about-founder__img-container--height-unset {
+    height: unset;
+}
+
+.about-founder .about-founder__description--padding-top {
+    padding-top: 50px;
+}
+
+.about-video {
+    padding: 40px 0 60px;
+    background-color: #f2f2f2;
+}
+
+.about-video .about-video__content {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-video .about-video__content iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.discount-description {
+    text-align: center;
+    margin: 30px auto 40px;
+}
+
+@media (max-width: 767px) {
+    .our-teachers {
+        flex-wrap: wrap;
+    }
+
+    .our-teachers__description {
+        width: 100%;
+    }
+
+    .logo .logo__link img{
+        width: 200px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .test-lesson {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .test-lesson .test-lesson__form, .test-lesson .test-lesson__description {
+        width: 100%;
+    }
+
+    .prices-list .prices-list__item, .discounts-list .discounts-list__item {
+        width: 80%;
+    }
+
+    .our-teachers-list .our-teachers-list__item {
+        width: 80%;
+    }
+
+}
