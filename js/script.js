@@ -11,6 +11,7 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
+                    // arrows: false,
                     slidesToShow: 2
                 }
             },
@@ -29,10 +30,25 @@ $(document).ready(function(){
         ]
 });
     $('.burger-toggler').click(() => {
-        $('.navbar').show( 300 );
-    })
+        $('.navbar').animate({
+            left: '0'
+        }, 500);
+    });
 
     $('.close').click(() => {
-        $('.navbar').hide(300)
-    })
+        $('.navbar').animate({
+            left: '-100%'
+        }, 500);
+    });
+
+    $(function(){
+        const url = window.location.pathname,
+            urlRegExp = new RegExp(url.replace(/\/$/,'') + "$");
+        $('.navigation a').each(function(){
+            if(urlRegExp.test(this.href.replace(/\/$/,''))){
+                $(this).addClass('navigation__link--active');
+            }
+        });
+
+    });
 });
