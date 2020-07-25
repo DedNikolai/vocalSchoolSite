@@ -39,6 +39,8 @@ body {
 }
 
 .navbar {
+    position: relative;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,10 +108,6 @@ body {
 .about-founder {
     display: flex;
     background-color: #f2f2f2;
-}
-
-.about-founder--background--none {
-    background-color: #ffffff;
 }
 
 .about-founder .about-founder__photo {
@@ -481,7 +479,7 @@ body {
 }
 
 .prices {
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -537,6 +535,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+}
+
+.footer--margin-top {
+    margin-top: 40px;
 }
 
 .footer-menu-container {
@@ -622,6 +624,8 @@ body {
 @media (max-width: 991px) {
     .close {
         display: block;
+        right: 10%;
+        margin-right: 10px;
     }
 
     .burger-toggler {
@@ -633,6 +637,7 @@ body {
         top: 0;
         left: -100%;
         width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
     }
 
     .navbar--display-block {
@@ -643,6 +648,8 @@ body {
         display: block;
         padding: 30px 0 0;
         background-color: #fff;
+        height: 100vh;
+        width: 90%;
     }
 
     .navigation .navigation__link {
@@ -735,20 +742,6 @@ body {
 }
 
 @media (max-width: 575px) {
-    .navbar {
-        z-index: 999;
-        background-color: rgb(0, 0, 0, 0.3);
-    }
-
-    .navigation {
-        height: 100vh;
-        width: 90%;
-    }
-
-    .close {
-        right: 10%;
-        margin-right: 10px;
-    }
 
     .footer {
         flex-wrap: wrap;

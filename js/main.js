@@ -28,15 +28,4 @@ $(document).ready(function(){
             }
         ]
     });
-    $('.burger-toggler').click(() => {
-        $('.navbar').show( 300 );
-    })
-
-    $('.close').click(() => {
-        $('.navbar').hide(300)
-    })
-
-    $('.navigation__link').click(() => {
-        $('.navbar').hide(300)
-    })
 });
