@@ -797,6 +797,18 @@ body {
         text-align: left;
         width: 80%;
     }
+
+    .btn-link {
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 479px) {
+    .contacts-information {
+        padding: 60px 20px 80px;
+    }
 }
 
 

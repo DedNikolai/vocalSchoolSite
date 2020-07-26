@@ -56,6 +56,10 @@ $(document).ready(function(){
         if ($(window).width() >= '992') {
             $('.navbar').css('left', 'unset')
         }
+
+        if ($(window).width() < '992') {
+            $('.navbar').css('left', '-100%')
+        }
     })
 
     $('.founder-slider').slick({
