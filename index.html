@@ -36,7 +36,7 @@
     </div>
     <div class="container">
         <h1 class="header__title">Академія солістів Оксани Маліцької</h1>
-        <div class="header__icon"><img src="img/header-title.png" alt=""></div>
+        <div class="header__icon"></div>
         <div class="header__slogan">З нами заспіває кожен!</div>
     </div>
     <!--<div class="chevron-down"><a href=""><img src="img/chevron-down.png" alt=""></a></div>-->
@@ -64,7 +64,7 @@
     <section class="about-academy">
         <div class="about-academy__description">
             <h2 class="section-title">Про академію</h2>
-            <div class="section-text">
+            <div class="section-text section-text--background-white">
                 <p>
                     Текст це так званий сторітейлінг, в якому від імені Оксани розповідається,
                     як вона стала педагогом і відкрила власну академію з унікальною
@@ -251,33 +251,19 @@
     <section class="feedback-container">
         <div class="container container--middle">
             <h2 class="section-title section-title--aling-center">Записатися</h2>
-            <!--<p>-->
-                <!--Текст це так званий сторітейлінг, в якому від імені Оксани розповідається,-->
-                <!--як вона стала педагогом і відкрила власну академію з унікальною-->
-                <!--методикою викладання.-->
-            <!--</p>-->
-            <!--<p>-->
-                <!--Кнопка знаходиться під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці, а також для ознайомлення з іншою інформацією про Оксану.-->
-            <!--</p>-->
-            <form class="feedback-form">
+            <form class="feedback-form" action="" method="post">
                 <div class="feedback-form__row">
-                    <input type="text" class="feedback-form__input" placeholder="Ім'я">
+                    <input type="text" name="name" class="feedback-form__input" required placeholder="Ім'я *">
                 </div>
                 <div class="feedback-form__row">
-                    <input type="text" class="feedback-form__input" placeholder="Прізвище">
+                    <input type="text" name="secondName" class="feedback-form__input" placeholder="Прізвище">
                 </div>
                 <div class="feedback-form__row">
-                    <input type="text" class="feedback-form__input" placeholder="Номер телефону">
+                    <input type="text" name="phone" class="feedback-form__input" required placeholder="Номер телефону *">
                 </div>
                 <div class="feedback-form__row">
-                    <input type="text" class="feedback-form__input" placeholder="Email">
+                    <input type="text" name="email" class="feedback-form__input" placeholder="Email">
                 </div>
-                <!--<div class="feedback-form__row">-->
-                    <!--<input type="text" class="feedback-form__input" placeholder="Адреса">-->
-                <!--</div>-->
-                <!--<div class="feedback-form__row">-->
-                    <!--<input type="text" class="feedback-form__input" placeholder="Як ви дізналися про нас">-->
-                <!--</div>-->
                 <div class="feedback-form__row feedback-form__row--full-width">
                     <textarea name="message" class="feedback-form__textares" placeholder="Ваше повідомлення"></textarea>
                 </div>
@@ -293,7 +279,6 @@
             <div class="advanteges-list">
                 <div class="advanteges-list__item">
                     <div class="advanteges-list__icon">
-                        <img src="img/icons/choose-icon.png" alt="">
                     </div>
                     <div class="advanteges-list__text">
                         під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
@@ -301,7 +286,6 @@
                 </div>
                 <div class="advanteges-list__item">
                     <div class="advanteges-list__icon">
-                        <img src="img/icons/choose-icon.png" alt="">
                     </div>
                     <div class="advanteges-list__text">
                         під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
@@ -309,7 +293,6 @@
                 </div>
                 <div class="advanteges-list__item">
                     <div class="advanteges-list__icon">
-                        <img src="img/icons/choose-icon.png" alt="">
                     </div>
                     <div class="advanteges-list__text">
                         під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
@@ -317,7 +300,6 @@
                 </div>
                 <div class="advanteges-list__item">
                     <div class="advanteges-list__icon">
-                        <img src="img/icons/choose-icon.png" alt="">
                     </div>
                     <div class="advanteges-list__text">
                         під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
@@ -326,95 +308,95 @@
             </div>
         </div>
     </section>
-    <section class="feedbacks">
-        <h2 class="section-title section-title--aling-center">Відгуки</h2>
-        <div class="feedbacks-slider">
-            <div class="feedbacks-slider__item">
-                <img src="img/teachers/teacher1.png" alt="" class="feedbacks-slider__photo">
-                <div class="feedback-text">
-                    <p>Education affection consulted by
-                        attending he therefore on.
-                    </p>
-                    <p>
-                        On it differed repeated wandered required in. Then girl neat why yet knew rose spot.
-                    </p>
-                </div>
-                <div class="feedback-author">
-                    James Brown
-                </div>
-            </div>
-            <div class="feedbacks-slider__item">
-                <img src="img/teachers/teaher2.png" alt="" class="feedbacks-slider__photo">
-                <div class="feedback-text">
-                    <p>Education affection consulted by
-                        attending he therefore on.
-                    </p>
-                    <p>
-                        On it differed repeated wandered required in. Then girl neat why yet knew rose spot.
-                    </p>
-                </div>
-                <div class="feedback-author">
-                    James Brown
-                </div>
-            </div>
-            <div class="feedbacks-slider__item">
-                <img src="img/teachers/teacher3.png" alt="" class="feedbacks-slider__photo">
-                <div class="feedback-text">
-                    <p>Education affection consulted by
-                        attending he therefore on.
-                    </p>
-                    <p>
-                        On it differed repeated wandered required in. Then girl neat why yet knew rose spot.
-                    </p>
-                </div>
-                <div class="feedback-author">
-                    James Brown
-                </div>
-            </div>
-            <div class="feedbacks-slider__item">
-                <img src="img/teachers/teacher4.png" alt="" class="feedbacks-slider__photo">
-                <div class="feedback-text">
-                    <p>Education affection consulted by
-                        attending he therefore on.
-                    </p>
-                    <p>
-                        On it differed repeated wandered required in. Then girl neat why yet knew rose spot.
-                    </p>
-                </div>
-                <div class="feedback-author">
-                    James Brown
-                </div>
-            </div>
-            <div class="feedbacks-slider__item">
-                <img src="img/teachers/teacher5.png" alt="" class="feedbacks-slider__photo">
-                <div class="feedback-text">
-                    <p>Education affection consulted by
-                        attending he therefore on.
-                    </p>
-                    <p>
-                        On it differed repeated wandered required in. Then girl neat why yet knew rose spot.
-                    </p>
-                </div>
-                <div class="feedback-author">
-                    James Brown
-                </div>
-            </div>
-            <div class="feedbacks-slider__item">
-                <img src="img/teachers/teacher6.png" alt="" class="feedbacks-slider__photo">
-                <div class="feedback-text">
-                    <p>Education affection consulted by
-                        attending he therefore on.
-                    </p>
-                    <p>
-                        On it differed repeated wandered required in. Then girl neat why yet knew rose spot.
-                    </p>
-                </div>
-                <div class="feedback-author">
-                    James Brown
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--<section class="feedbacks">-->
+        <!--<h2 class="section-title section-title&#45;&#45;aling-center">Відгуки</h2>-->
+        <!--<div class="feedbacks-slider">-->
+            <!--<div class="feedbacks-slider__item">-->
+                <!--<img src="img/teachers/teacher1.png" alt="" class="feedbacks-slider__photo">-->
+                <!--<div class="feedback-text">-->
+                    <!--<p>Education affection consulted by-->
+                        <!--attending he therefore on.-->
+                    <!--</p>-->
+                    <!--<p>-->
+                        <!--On it differed repeated wandered required in. Then girl neat why yet knew rose spot.-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="feedback-author">-->
+                    <!--James Brown-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="feedbacks-slider__item">-->
+                <!--<img src="img/teachers/teaher2.png" alt="" class="feedbacks-slider__photo">-->
+                <!--<div class="feedback-text">-->
+                    <!--<p>Education affection consulted by-->
+                        <!--attending he therefore on.-->
+                    <!--</p>-->
+                    <!--<p>-->
+                        <!--On it differed repeated wandered required in. Then girl neat why yet knew rose spot.-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="feedback-author">-->
+                    <!--James Brown-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="feedbacks-slider__item">-->
+                <!--<img src="img/teachers/teacher3.png" alt="" class="feedbacks-slider__photo">-->
+                <!--<div class="feedback-text">-->
+                    <!--<p>Education affection consulted by-->
+                        <!--attending he therefore on.-->
+                    <!--</p>-->
+                    <!--<p>-->
+                        <!--On it differed repeated wandered required in. Then girl neat why yet knew rose spot.-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="feedback-author">-->
+                    <!--James Brown-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="feedbacks-slider__item">-->
+                <!--<img src="img/teachers/teacher4.png" alt="" class="feedbacks-slider__photo">-->
+                <!--<div class="feedback-text">-->
+                    <!--<p>Education affection consulted by-->
+                        <!--attending he therefore on.-->
+                    <!--</p>-->
+                    <!--<p>-->
+                        <!--On it differed repeated wandered required in. Then girl neat why yet knew rose spot.-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="feedback-author">-->
+                    <!--James Brown-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="feedbacks-slider__item">-->
+                <!--<img src="img/teachers/teacher5.png" alt="" class="feedbacks-slider__photo">-->
+                <!--<div class="feedback-text">-->
+                    <!--<p>Education affection consulted by-->
+                        <!--attending he therefore on.-->
+                    <!--</p>-->
+                    <!--<p>-->
+                        <!--On it differed repeated wandered required in. Then girl neat why yet knew rose spot.-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="feedback-author">-->
+                    <!--James Brown-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="feedbacks-slider__item">-->
+                <!--<img src="img/teachers/teacher6.png" alt="" class="feedbacks-slider__photo">-->
+                <!--<div class="feedback-text">-->
+                    <!--<p>Education affection consulted by-->
+                        <!--attending he therefore on.-->
+                    <!--</p>-->
+                    <!--<p>-->
+                        <!--On it differed repeated wandered required in. Then girl neat why yet knew rose spot.-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="feedback-author">-->
+                    <!--James Brown-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
     <section class="prices">
         <div class="container container--middle">
             <h2 class="section-title section-title--aling-center">Ціни та спеціальні програми</h2>

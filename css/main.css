@@ -266,8 +266,8 @@
     background-color: #f2f2f2;
 }
 
-.contacts-information--background-grey {
-    background-color: #f2f2f2;
+.contacts-information--background-none {
+    background-color: #fff;
     color: rgb(17, 14, 30);
 }
 
@@ -276,7 +276,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.contacts .contacts__social-link > i {
+.contacts .contacts__social-link > .contacts__social-icon {
     color: rgb(35, 43, 62);;
 }
 

@@ -109,19 +109,20 @@ $(document).ready(function(){
                 breakpoint: 992,
                 settings: {
                     // arrows: false,
-                    slidesToShow: 2
+                    slidesToShow: 1,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1,
                 }
             },
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    centerPadding: '0px',
                 }
             }
         ]
@@ -175,5 +176,21 @@ $(document).ready(function(){
         $('.yt-player').each(function(){
             this.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*')
         });
+    });
+});
+
+$('.feedback-form').on('submit', (e) => {
+    e.preventDefault();
+
+    let action = $(e.currentTarget).attr('action');
+    let th = $(e.currentTarget);
+
+
+    $.ajax({
+        type: 'POST',
+        url: action,
+        data: th.serialize()
+    }).done(function(){
+        console.log('Отправлено!');
     });
 });

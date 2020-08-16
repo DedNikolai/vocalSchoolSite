@@ -83,8 +83,13 @@ body {
 }
 
 .header .header__icon {
-    text-align: center;
-    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    margin: 10px auto 0;
+    background-image: url("../img/header-title.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header .header__slogan {
@@ -156,9 +161,41 @@ body {
     margin-top: 0;
 }
 
+.section-text {
+    height: 200px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.section-text--max-height {
+    height: auto;
+}
+
+.section-text--full-height {
+    height: auto;
+}
+
 .section-text p {
     margin-top: 20px;
     color: rgb(17, 14, 30);
+}
+
+.section-text::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, rgba(242,242,242,0), rgba(242,242,242,1));
+}
+
+.section-text--background-white::after {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+.section-text--max-height::after {
+    content: unset;
 }
 
 .section-text--yellow {
@@ -251,28 +288,28 @@ body {
     text-align: center;
 }
 
-.teachers {
+.teachers, .academy-gallery {
     padding: 30px 0 20px;
     background-color: #f2f2f2;
 }
 
-.teachers-list {
+.teachers-list, .academy-gallery-list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
 }
 
-.teachers-list .teachers-list__item {
+.teachers-list .teachers-list__item, .academy-gallery-list .academy-gallery-list__item {
     width: 25%;
 }
 
-.teachers-list .teachers-list__link {
+.teachers-list .teachers-list__link, .academy-gallery-list .academy-gallery-list__link {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.teachers-list .teachers-list__icon {
+.teachers-list .teachers-list__icon, .academy-gallery-list .academy-gallery-list__icon {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -357,12 +394,11 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 16px
 }
 
 .feedback-form .feedback-form__input::placeholder,  .feedback-form .feedback-form__textares::placeholder {
-    color: #fff;
+    color: #b3b3b3;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -408,6 +444,12 @@ body {
 }
 
 .advanteges-list .advanteges-list__icon {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/choose-icon.png");
     margin-right: 30px;
 }
 
@@ -465,7 +507,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 20px;
-//background-color: #fff;
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 
@@ -508,6 +549,11 @@ body {
 
 .map {
     width: 50%;
+    overflow: hidden;
+}
+
+.map p {
+    height: 100%;
 }
 
 .map .map__img {
@@ -709,9 +755,10 @@ body {
 
     .about-academy .about-academy__gallery {
         width: 100%;
+        height: 400px;
     }
 
-    .teachers-list .teachers-list__item {
+    .teachers-list .teachers-list__item, .academy-gallery-list .academy-gallery-list__item {
         width: 50%;
     }
 
