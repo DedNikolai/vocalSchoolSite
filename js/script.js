@@ -33,23 +33,46 @@ $(document).ready(function(){
         $('.navbar').animate({
             left: '0'
         }, 500);
+        $('body').addClass('body-overflof-hidden');
+        $('.header').addClass('header--clip-path-none');
     });
 
     $('.close').click(() => {
         $('.navbar').animate({
             left: '-100%'
-        }, 500);
+        }, 500, "linear", () => {
+            $('body').removeClass('body-overflof-hidden');
+            $('.header').removeClass('header--clip-path-none');
+        });
     });
 
-    $(function(){
-        const url = window.location.pathname,
-            urlRegExp = new RegExp(url.replace(/\/$/,'') + "$");
-        $('.navigation a').each(function(){
-            if(urlRegExp.test(this.href.replace(/\/$/,''))){
-                $(this).addClass('navigation__link--active');
-            }
-        });
+    $('.close-modal').click(() => {
+        $('.modal-form').css({display: 'flex'});
+    })
 
+    $('.navbar').swipe({
+        swipe:function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection) {
+
+            if (phase=="left"){
+                $('.navbar').animate({
+                    left: '-100%'
+                }, 500, "linear", () => {
+                    $('body').removeClass('body-overflof-hidden');
+                    $('.header').removeClass('header--clip-path-none');
+                });
+            }
+        },
+        triggerOnTouchEnd:false,
+        threshold:20 // сработает через 20 пикселей
+    });
+
+    const location = window.location.href;
+
+    $('.navigation__link').each(function () {
+        const link = this.href;
+        if (location == link) {
+            $(this).addClass('navigation__link--active');
+        }
     });
 
     $(window).resize(() => {
@@ -128,15 +151,15 @@ $(document).ready(function(){
         ]
     });
 
-    var tag = document.createElement('script');
+    let tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
+    let firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    var player;
+    let player;
     window.onYouTubePlayerAPIReady = function onYouTubeIframeAPIReady() {
-        var elems1 = document.getElementsByClassName('yt-player');
-        for(var i = 0; i < elems1.length; i++) {
+        let elems1 = document.getElementsByClassName('yt-player');
+        for(let i = 0; i < elems1.length; i++) {
             player = new YT.Player(elems1[i], {
                 events: {
                     // 'onReady': onPlayerReady,
@@ -177,6 +200,8 @@ $(document).ready(function(){
             this.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*')
         });
     });
+
+    const lightbox = GLightbox({});
 });
 
 $('.feedback-form').on('submit', (e) => {
@@ -191,6 +216,10 @@ $('.feedback-form').on('submit', (e) => {
         url: action,
         data: th.serialize()
     }).done(function(){
-        console.log('Отправлено!');
+        $(".feedback-form").trigger("reset");
+        $('.modal-form').css({display: 'flex'});
+        setTimeout(() => {
+            $('.modal-form').css({display: 'none'});
+        }, 3000)
     });
 });

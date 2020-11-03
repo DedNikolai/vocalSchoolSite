@@ -26,10 +26,10 @@
             <span class="close"></span>
             <ul class="navigation">
                 <li class="navigation__item"><a href="./" class="navigation__link">Головна</a></li>
-                <li class="navigation__item"><a href="./about-academy.html" class="navigation__link">Про академію</a></li>
+                <li class="navigation__item"><a href="./about-academy.html" class="navigation__link">Академія</a></li>
                 <li class="navigation__item"><a href="./teachers.html" class="navigation__link">Педагоги</a></li>
                 <li class="navigation__item"><a href="./prices.html" class="navigation__link">Ціни</a></li>
-                <li class="navigation__item"><a href="./feedbacks.html" class="navigation__link">Відгуки</a></li>
+                <li class="navigation__item"><a href="./rent.html" class="navigation__link">Аренда</a></li>
                 <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
             </ul>
         </nav>
@@ -249,11 +249,19 @@
         </div>
     </section>
     <section class="feedback-container">
+        <div class="modal-form">
+            <div class="modal-form__container">
+                <span class="close-modal"></span>
+                <div class="modal-form__text">
+                    Дякуемо за вашу заявку, ми звяжемося з вами найближчым часом
+                </div>
+            </div>
+        </div>
         <div class="container container--middle">
             <h2 class="section-title section-title--aling-center">Записатися</h2>
             <form class="feedback-form" action="" method="post">
                 <div class="feedback-form__row">
-                    <input type="text" name="name" class="feedback-form__input" required placeholder="Ім'я *">
+                    <input type="text" name="name" class="feedback-form__input" required autocomplete="off" placeholder="Ім'я *">
                 </div>
                 <div class="feedback-form__row">
                     <input type="text" name="secondName" class="feedback-form__input" placeholder="Прізвище">
@@ -281,6 +289,8 @@
                     <div class="advanteges-list__icon">
                     </div>
                     <div class="advanteges-list__text">
+                        під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
+                        під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
                         під текстом і направляє відвідувача сайту на нову сторінку для продовження читання тексту, що на головній сторінці.
                     </div>
                 </div>
@@ -435,7 +445,7 @@
         </div>
     </section>
 </main>
-<footer class="footer container">
+<footer class="footer">
         <div class="footer-menu-container">
             <div>Copyright © 2020 Malitska Soilists Academy</div>
             <ul class="footer-menu">
@@ -455,6 +465,7 @@
 <script src="js/simple-slider.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
