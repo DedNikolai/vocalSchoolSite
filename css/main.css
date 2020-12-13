@@ -39,7 +39,7 @@
 }
 
 .section-title--mini {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 26px;
 }
 
@@ -84,7 +84,6 @@
 
 .our-teachers-list {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #f2f2f2;
@@ -92,11 +91,10 @@
 
 .our-teachers-list .our-teachers-list__item {
     position: relative;
-    height: 300px;
     width: 300px;
     background-color: #fff;
     margin: 50px 30px;
-    padding: 70px 30px 0;
+    padding: 70px 30px 20px;
     box-shadow: 0px 3px 18px 0px rgba(17, 9, 9, 0.08);
     box-sizing: border-box;
 }
@@ -119,7 +117,7 @@
     font-size: 24px;
     color: rgb(186, 171, 112);
     font-weight: 600;
-    line-height: 38px;
+    line-height: 28px;
 }
 
 .teacher-row {
@@ -153,7 +151,7 @@
 }
 
 .prices-description .prices-description__text {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -163,6 +161,11 @@
     background-color: #f2f2f2;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.rent-price {
+    padding-top: 30px;
+    background-color: #f2f2f2;
 }
 
 .prices-list {
@@ -176,7 +179,14 @@
 }
 
 .discounts-list {
+    margin-top: 40px;
+}
+
+.special-discounts .discounts-list {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
     margin-top: 20px;
+    background-color: #f2f2f2;
 }
 
 .prices-description--background-grey {
@@ -269,6 +279,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .rent-list .rent-list__item {
@@ -280,7 +291,7 @@
     width: 250px;
     background-color: #fff;
     font-size: 22px;
-    margin: 40px 30px;
+    margin: 20px;
     padding: 0 20px;
     box-shadow: 0px 3px 18px 0px rgba(17, 9, 9, 0.08);
     box-sizing: border-box;
@@ -315,6 +326,7 @@
 .special-discounts {
     padding-top: 30px;
 }
+
 
 .contacts-info {
     background-color: #f2f2f2;
@@ -359,6 +371,15 @@
     padding: 50px 20px;
     min-height: 100vh;
     background-color: #f2f2f2;
+}
+
+.academy {
+    background-color: #f2f2f2;
+}
+
+.academy .academy__description {
+    padding: 20px 0;
+    text-align: center;
 }
 
 .about-founder .about-founder__img-container--height-unset {
